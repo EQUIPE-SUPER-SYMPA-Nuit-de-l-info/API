@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
         - name: nuit-api
-          image: 4oh4/kubernetes-fastapi:1.0.0
+          image: aimerisson/nuit-info:latest
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
