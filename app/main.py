@@ -1,7 +1,10 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from .endpoints.experience import experience_router
+
 
 app = FastAPI()
-
+app.include_router(experience_router)
 
 @app.get("/")
 async def root():
