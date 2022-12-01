@@ -1,0 +1,42 @@
+# loadbalancer pour accéder au site depuis l'extérieur !!
+apiVersion: v1
+kind: Service
+metadata:
+  name: nuit-api-service
+spec:
+  selector:
+    app: nuit-api
+  ports:
+    - protocol: "TCP"
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
+
+---
+# nuit-api deploiement
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nuit-api
+  labels:
+    app: nuit-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nuit-api
+  template:
+    metadata:
+      labels:
+        app: nuit-api
+    spec:
+      containers:
+        - name: nuit-api
+          image: 4oh4/kubernetes-fastapi:1.0.0
+          ports:
+            - containerPort: 8080
+          imagePullPolicy: Always
+          resources:
+            # on demande pas trop, si on en a pas besoin !
+            requests:
+              cpu: "250m"
