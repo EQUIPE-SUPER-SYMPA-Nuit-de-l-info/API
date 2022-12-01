@@ -14,4 +14,4 @@ COPY ./app /app
 HEALTHCHECK --interval=21s --timeout=3s --start-period=10s CMD curl --fail http://localhost:8080/ping || exit 1
 
 # commande de lancement de l'API
-CMD ["uvicorn", "service.main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
