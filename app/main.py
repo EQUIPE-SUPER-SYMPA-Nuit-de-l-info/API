@@ -6,7 +6,7 @@ from .endpoints.experience import experience_router
 app = FastAPI()
 
 
-origins = []
+origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
