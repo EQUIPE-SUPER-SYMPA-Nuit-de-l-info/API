@@ -1,7 +1,7 @@
 # Nuit de l'info 2022 !
 
 ## Qui sommes-nous ?
-5 jeunes de première année d'IUT informatique de Lyon 1 qui ont décidé de participer à la nuit de l'info 2022 et de tout 
+5 jeunes de première année d'IUT informatique de Lyon 1 qui ont décidés de participer à la nuit de l'info 2022 et de tout 
 gagner !
 
 ## Notre infrastructure
