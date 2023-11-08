@@ -5,7 +5,7 @@
 gagner !
 
 ## Notre infrastructure
-Pour l'un de nous défis nous avons besoin de dévelloper une infrastructure basé sur des microservices.
+Pour l'un de nos défis nous avons besoin de dévelloper une infrastructure basée sur des microservices.
 Nous avons donc décidé de déployer notre infrastructure sur un cluster Kubernetes.
 On y retrouve :
 - Une BD PostgreSQL
@@ -16,7 +16,7 @@ Tous les services sont déployés en mode HPA (Horizontal Pod Autoscaler) pour p
 mais aussi limiter les coûts en énergie et en ressources lorsque la charge est faible.
 
 ## API FastAPI
-L'API est codé en python avec le framework [FastAPI](https://fastapi.tiangolo.com/)
+L'API est codée en python avec le framework [FastAPI](https://fastapi.tiangolo.com/)
 
 FastAPI est un framework moderne et rapide qui permet de développer des API en python de manière simple et efficace.
 Il devient de plus en plus populaire et est utilisé par de nombreuses entreprises comme Spotify, Netflix, notament pour
